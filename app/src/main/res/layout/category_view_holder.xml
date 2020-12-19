@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rect_white"
+    android:layout_margin="10dp"
+    >
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/constraint"
+       android:layout_width="100dp"
+       android:layout_height="100dp">
+
+       <com.comix.rounded.RoundedCornerImageView
+           android:id="@+id/imageCategoryHolder2"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:background="@drawable/shadow"
+           android:scaleType="centerCrop"
+           android:src="@color/cyan"
+           app:cornerRadius="5dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:visibility="gone"/>
+
+       <com.comix.rounded.RoundedCornerImageView
+           android:id="@+id/imageCategoryHolder"
+           android:layout_width="95dp"
+           android:layout_height="95dp"
+           android:background="@color/white"
+           android:scaleType="centerCrop"
+           android:src="@drawable/splash"
+           app:cornerRadius="5dp"
+           android:padding="5dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <CheckBox
+           android:id="@+id/checkboxItem"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           app:layout_constraintBottom_toBottomOf="@+id/imageCategoryHolder"
+           app:layout_constraintEnd_toEndOf="@+id/imageCategoryHolder"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="@+id/imageCategoryHolder"
+           app:layout_constraintTop_toTopOf="@+id/imageCategoryHolder"
+           app:layout_constraintVertical_bias="1.0" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/imageNameCategoryHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constraint"
+        android:textSize="12sp"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"/>
+
+</RelativeLayout>

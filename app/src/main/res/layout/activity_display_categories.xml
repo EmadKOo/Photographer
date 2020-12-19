@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserNormal.DisplayAllCategories.DisplayCategoriesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/toolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/display_image_toolbar" />
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/displayAllCategoriesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarLayout"
+            android:nestedScrollingEnabled="false"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

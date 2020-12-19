@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/round_rect_white">
+
+    <TextView
+        android:id="@+id/grantTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Grant Permission"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mailPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grantTV"
+        android:hint="Email Address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mailPermission"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radioPhotographer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photographer"
+            android:checked="true"
+            android:layout_marginRight="20dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/round_rect_orange"
+        android:textColor="@color/white"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>

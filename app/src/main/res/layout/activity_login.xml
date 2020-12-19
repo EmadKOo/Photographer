@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLight_peach"
+    tools:context=".ui.login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mlogo"
+        />
+
+    
+    <TextView
+        android:id="@+id/welcomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/continueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to Continue"
+        android:textSize="20sp"
+        android:layout_below="@id/welcomeTV"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continueTV"
+        android:hint="Email Address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailLogin"
+        android:hint="Password"
+        android:textSize="10sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="10sp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/rememberLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLogin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <RadioButton
+            android:id="@+id/radioRemember"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textColor="@color/black"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_rect_orange"
+        android:textColor="@color/white"
+        android:layout_below="@+id/rememberLayout"
+        android:text="Login"/>
+
+
+
+    <TextView
+        android:id="@+id/goToSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User? Signup"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/blabla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Signing up you indicate that you have read and agreed to the terms of Service"
+        android:layout_below="@+id/goToSignUp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

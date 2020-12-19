@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_white_percent_70"
+    tools:context=".ui.UserNormal.DisplayImage.DisplayImageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/toolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/display_image_toolbar" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/imageType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarLayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="#Rain"
+            android:textColor="@color/cyan"
+            android:textSize="20sp" />
+
+        <com.comix.rounded.RoundedCornerImageView
+            android:id="@+id/imageDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/imageType"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shadow"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash"
+            app:cornerRadius="10dp" />
+
+
+        <ImageView
+            android:id="@+id/likeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/white_heart"
+            android:layout_below="@id/photographerNameTV"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/numOfLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27 Likes"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/likeIcon"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/photographerNameTV"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/photographerNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDisplay"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="photographerName"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDisplay"
+            android:layout_alignRight="@id/imageDisplay"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/similarTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Similar Images"
+            android:layout_below="@+id/numOfLikes"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/similarRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/similarTV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

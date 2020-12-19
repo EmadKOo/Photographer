@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorLight_peach"
+    tools:context=".ui.registeration.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mlogo" />
+
+
+    <TextView
+        android:id="@+id/fillTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:text="Fill These Fields to Signup"
+        android:textSize="17sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fillTV"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/ic_first_page_black_24dp"
+        android:hint="First Name"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/ic_last_page_black_24dp"
+        android:hint="Last Name"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="10sp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:hint="Email Address"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:textSize="13sp"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="10sp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:hint="Password"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="10sp"/>
+    <RadioButton
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Remember me"
+        android:textSize="12sp"
+        android:checked="true"
+        android:textColor="@color/black"/>
+
+
+    <RadioButton
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remember"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:checked="true"
+        android:layout_marginTop="5dp"
+        android:text="Download this terms and conditions, terms of service"
+        android:textSize="12sp"
+        android:textColor="@color/black" />
+
+
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/terms"
+        android:text="register"
+        android:background="@drawable/round_rect_orange"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have an account? Signin"
+        android:layout_below="@+id/registerBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

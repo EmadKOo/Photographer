@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recyclerType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textColor="@color/cyan"
+            android:textSize="20sp"
+            android:layout_marginLeft="15sp"
+            android:layout_above="@+id/photographerHomeRecyclerView"
+            />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photographerInsideRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/recyclerType"
+        android:nestedScrollingEnabled="false"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

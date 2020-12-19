@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rect_white"
+    android:layout_margin="15dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/imgName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_first_page_black_24dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/imgLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/imgName"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:background="@drawable/round_rect_white"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_first_page_black_24dp" />
+
+    <TextView
+        android:id="@+id/categoryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Category"
+        android:layout_below="@id/imgLocation"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="14sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/categoryTV"
+        android:layout_below="@id/imgLocation"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnPickImage"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_rect_white"
+        android:src="@drawable/add"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/categoryTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>

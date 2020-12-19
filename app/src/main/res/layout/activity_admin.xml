@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserAdmin.Admin.AdminActivity">
+
+    <Button
+        android:id="@+id/addCategoryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Category"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:onClick="addCategoryDialog"
+        android:background="@drawable/round_rect_orange"
+        android:textColor="@color/white"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+
+
+    <Button
+        android:id="@+id/grantPermission"
+        android:layout_below="@+id/addCategoryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grant Permission"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:onClick="grantPermission"
+        android:background="@drawable/round_rect_orange"
+        android:textColor="@color/white"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
+</RelativeLayout>

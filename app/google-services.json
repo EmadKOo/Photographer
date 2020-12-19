@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "852808645416",
+    "project_id": "photography-a7ef8",
+    "storage_bucket": "photography-a7ef8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852808645416:android:1d63dbd18bc2d92239ae1d",
+        "android_client_info": {
+          "package_name": "com.example.photographer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852808645416-rvsnah06ge3gs7kckj852nhsl9aq5sml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.photographer",
+            "certificate_hash": "3920e5c1b84af68eeee4be72380882e2b746fcf6"
+          }
+        },
+        {
+          "client_id": "852808645416-0nd6g098104kod6r1fl47j66kcppfid6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh99LQMAIxo1WYQqIYWl7cyD4mQsklR90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852808645416-0nd6g098104kod6r1fl47j66kcppfid6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

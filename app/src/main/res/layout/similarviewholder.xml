@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rect_white"
+    android:layout_margin="10dp"
+    >
+
+    <com.comix.rounded.RoundedCornerImageView
+        android:id="@+id/imageSimilarHolder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shadow"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        app:cornerRadius="5dp"/>
+
+    <TextView
+        android:id="@+id/imageNameSimilarHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSimilarHolder"
+        android:textSize="12sp"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"/>
+
+</RelativeLayout>

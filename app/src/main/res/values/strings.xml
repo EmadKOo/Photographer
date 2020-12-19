@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Photographer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="shuffle">All Images</string>
+    <string name="rated">Top Rated</string>
+    <string name="dialog_about">
+        As you read more about Android development
+        youll probably encounter the term  in various situations.
+        There are two types of compatibility device compatibility and app compatibility.
+
+Because Android is an open source project, any hardware manufacturer can build a device that runs the Android operating system. Yet a device is  only if it can correctly run apps written for the Android execution environment. The exact details of the Android execution environment are defined by the Android compatibility program and each device must pass the Compatibility Test Suite in order to be considered compatible.
+
+
+However you do need to consider whether your app is compatible with each potential device configuration. Because Android runs on a wide range of device configurations, some features are not available on all devices. For example, some devices may not include a compass sensor. If your apps core functionality requires the use of a compass sensor, then your app is compatible only with devices that include a compass sensor.</string>
+</resources>

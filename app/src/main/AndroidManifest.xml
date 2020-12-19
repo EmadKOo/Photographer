@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.photographer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.UserPhotographer.PhotographerDisplayImage.PhotographerDisplayImageActivity"></activity>
+        <activity android:name=".ui.UserNormal.TopRated.TopRatedActivity" />
+        <activity
+            android:name=".ui.UserNormal.AllImages.AllImagesActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.UserNormal.DisplayAllCategories.DisplayCategoriesActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.UserNormal.DisplayCategoryImages.DisplayCategoryActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.UserNormal.DisplayImage.DisplayImageActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.CategoriesRegistration.CategoriesActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.UserPhotographer.Photographer.PhotographerActivity"
+            android:theme="@style/Photographer" />
+        <activity android:name=".ui.UserAdmin.Admin.AdminActivity" />
+        <activity
+            android:name=".ui.registeration.RegisterActivity"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/TransparentActionBar" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.UserNormal.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
