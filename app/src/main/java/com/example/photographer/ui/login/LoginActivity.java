@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -51,14 +52,14 @@ public class LoginActivity extends AppCompatActivity implements ILogin{
         passwordLogin = findViewById(R.id.passwordLogin);
         loginBtn = findViewById(R.id.loginBtn);
         goToSignUp = findViewById(R.id.goToSignUp);
-        welcomeTV = findViewById(R.id.continueTV);
-        continueTV = findViewById(R.id.welcomeTV);
+        continueTV = findViewById(R.id.continueTV);
+        welcomeTV = findViewById(R.id.welcomeTV);
         forgetPassword = findViewById(R.id.forgetPassword);
         radioRemember = findViewById(R.id.radioRemember);
         blabla = findViewById(R.id.blabla);
 
-        welcomeTV.setTypeface(fonts.getRedressedFont());
-        continueTV.setTypeface(fonts.getJostFont());
+        welcomeTV.setTypeface(fonts.getCharmonmanFont());
+        continueTV.setTypeface(fonts.getUbuntuFont());
         mailLogin.setTypeface(fonts.getComfortaaFont());
         passwordLogin.setTypeface(fonts.getComfortaaFont());
         radioRemember.setTypeface(fonts.getComfortaaFont());

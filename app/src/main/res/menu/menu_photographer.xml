@@ -1,11 +1,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-            <item
-                android:id="@+id/btnAddImage"
-                android:orderInCategory="1"
-                android:icon="@drawable/add"
-                app:showAsAction="always"
-                android:title="Add" />
+    <item
+        android:id="@+id/btnAddImage"
+        android:orderInCategory="1"
+        android:icon="@drawable/add"
+        app:showAsAction="always"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/btnSignout"
+        android:orderInCategory="2"
+        android:icon="@drawable/logout"
+        app:showAsAction="ifRoom"
+        android:title="Logout" />
 
 </menu>

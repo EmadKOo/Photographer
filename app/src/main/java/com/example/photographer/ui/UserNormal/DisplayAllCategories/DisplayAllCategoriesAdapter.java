@@ -43,7 +43,7 @@ public class DisplayAllCategoriesAdapter  extends RecyclerView.Adapter<DisplayAl
 
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
-        Picasso.get().load("https://via.placeholder.com/300/09f/fff.png").into(holder.imageSimilarHolder);
+        Picasso.get().load(categoriesList.get(position).getCategoryImage()).into(holder.imageSimilarHolder);
         holder.imageNameSimilarHolder.setText(categoriesList.get(position).getCategory());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

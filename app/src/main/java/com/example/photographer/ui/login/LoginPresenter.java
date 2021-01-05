@@ -1,5 +1,7 @@
 package com.example.photographer.ui.login;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 
 import com.example.photographer.pojo.User;
@@ -44,6 +46,8 @@ public class LoginPresenter {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 user = snapshot.getValue(User.class);
+                Log.d(TAG, "onDataChange: " + user.getMail());
+                Log.d(TAG, "onDataChange: " + user.getUserType());
                 iLogin.login(mAuth.getCurrentUser(), user);
             }
 

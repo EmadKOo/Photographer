@@ -29,6 +29,7 @@ import com.example.photographer.R;
 import com.example.photographer.Tools.Fonts;
 import com.example.photographer.pojo.Category;
 import com.example.photographer.pojo.Image;
+import com.example.photographer.ui.login.LoginActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -80,6 +81,10 @@ public class PhotographerActivity extends AppCompatActivity implements IPhotogra
         if (id == R.id.btnAddImage) {
             pickGallry();
             return true;
+        } else if (id == R.id.btnSignout){
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -105,11 +110,7 @@ public class PhotographerActivity extends AppCompatActivity implements IPhotogra
                 progress.setVisibility(View.VISIBLE);
                 Bitmap bitmapImageUpload = MediaStore.Images.Media.getBitmap(this.getContentResolver(), data.getData());
               //  imageInfo();
-                Log.d(TAG, "onActivityResult: "  + currentImage.getName());
-                Log.d(TAG, "onActivityResult: "  + currentImage.getLocation());
-                Log.d(TAG, "onActivityResult: "  + currentImage.getPhotographerName());
-                Log.d(TAG, "onActivityResult: "  + currentImage.getCategory().getCategory());
-                photographerPresenter.addImageToFirebase(bitmapImageUpload, currentImage);
+                 photographerPresenter.addImageToFirebase(bitmapImageUpload, currentImage);
             } catch (IOException e) {
                 e.printStackTrace();
             }

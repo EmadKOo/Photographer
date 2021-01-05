@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +20,7 @@ import android.widget.Toast;
 import com.example.photographer.R;
 import com.example.photographer.Tools.Fonts;
 import com.example.photographer.pojo.Category;
+import com.example.photographer.ui.login.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AdminActivity extends AppCompatActivity implements IAdmin {
@@ -42,6 +46,23 @@ public class AdminActivity extends AppCompatActivity implements IAdmin {
 
     }
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_admin, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.btnSignout){
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     public void addCategoryDialog() {
         LayoutInflater li = LayoutInflater.from(this);

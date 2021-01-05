@@ -14,6 +14,7 @@ import com.example.photographer.R;
 import com.example.photographer.Tools.Fonts;
 import com.example.photographer.pojo.User;
 import com.example.photographer.ui.CategoriesRegistration.CategoriesActivity;
+import com.example.photographer.ui.login.LoginActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseUser;
@@ -69,7 +70,15 @@ public class RegisterActivity extends AppCompatActivity implements IRegister{
         remember.setTypeface(fonts.getComfortaaFont());
         terms.setTypeface(fonts.getComfortaaFont());
         registerBtn.setTypeface(fonts.getComfortaaFont());
-        goToLogin.setTypeface(fonts.getCharmonmanFont());
+        goToLogin.setTypeface(fonts.getJostFont());
+
+        goToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                finish();
+            }
+        });
     }
 
 

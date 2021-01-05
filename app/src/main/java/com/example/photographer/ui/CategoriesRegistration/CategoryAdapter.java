@@ -49,7 +49,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
 
         Log.d("TAG", "onBindViewHolder: ");
         holder.imageNameCategoryHolder.setText(categoriesList.get(position).getCategory());
-        Picasso.get().load("https://via.placeholder.com/300/09f/fff.png").into(holder.imageCategoryHolder);
+        Picasso.get().load(categoriesList.get(position).getCategoryImage()).into(holder.imageCategoryHolder);
         if (favouriteCatsBefore.contains(String.valueOf(categoriesList.get(position).getId()))){
             holder.checkboxItem.setChecked(true);
         }

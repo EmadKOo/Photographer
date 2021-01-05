@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     android:background="@color/colorLight_peach"
     tools:context=".ui.login.LoginActivity">
 
@@ -12,14 +13,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/mlogo"
-        />
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/header"
+                />
+        </LinearLayout>
+
 
     
     <TextView
@@ -28,8 +36,8 @@
         android:layout_height="wrap_content"
         android:text="Welcome"
         android:textSize="30sp"
-        android:layout_below="@id/logo"
-        android:layout_marginTop="30dp"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="5dp"
         android:layout_centerHorizontal="true"/>
 
     <TextView
@@ -37,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login to Continue"
-        android:textSize="20sp"
+        android:textSize="13sp"
         android:layout_below="@id/welcomeTV"
         android:layout_centerHorizontal="true" />
 

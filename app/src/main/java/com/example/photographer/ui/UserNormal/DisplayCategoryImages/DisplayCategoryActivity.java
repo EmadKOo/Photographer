@@ -80,6 +80,9 @@ public class DisplayCategoryActivity extends AppCompatActivity implements IDispl
         this.images = images;
         similarImagesAdapter = new SimilarImagesAdapter(this, images,"DisplayCategoryActivity", this);
         displayCategoryRecyclerView.setAdapter(similarImagesAdapter);
-        imageName.setText("#" +images.get(0).getCategory().getCategory());
+        if (images.size()!=0){
+            imageName.setText("#" +images.get(0).getCategory().getCategory());
+
+        }
     }
 }

@@ -37,6 +37,7 @@ public class SplashPresenter {
             databaseReference.child(mAuth.getCurrentUser().getUid()).child("userType").addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    Log.d(TAG, "onDataChange: " + mAuth.getCurrentUser().getUid());
                     Log.d(TAG, "onDataChange: " + snapshot.toString());
                     if (snapshot.getValue().equals("admin")){
                         intent = new Intent(context, AdminActivity.class);

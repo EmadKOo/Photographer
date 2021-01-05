@@ -43,7 +43,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/shadow"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:src="@drawable/splash"
             app:cornerRadius="10dp" />
 

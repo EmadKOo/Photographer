@@ -33,9 +33,11 @@
             android:theme="@style/Photographer" />
         <activity android:name=".ui.UserAdmin.Admin.AdminActivity" />
         <activity
+            android:windowSoftInputMode="adjustResize|stateHidden"
             android:name=".ui.registeration.RegisterActivity"
             android:theme="@style/TransparentActionBar" />
         <activity
+            android:windowSoftInputMode="adjustResize|stateHidden"
             android:name=".ui.login.LoginActivity"
             android:theme="@style/TransparentActionBar" />
         <activity

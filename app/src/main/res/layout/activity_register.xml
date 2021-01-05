@@ -6,28 +6,34 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@color/colorLight_peach"
+    android:fitsSystemWindows="true"
     tools:context=".ui.registeration.RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/mlogo" />
-
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/header" />
+        </LinearLayout>
 
     <TextView
         android:id="@+id/fillTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logo"
+        android:layout_below="@id/headerLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:textColor="@color/colorAccent"
         android:text="Fill These Fields to Signup"
         android:textSize="17sp" />

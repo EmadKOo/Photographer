@@ -24,4 +24,8 @@ public class Fonts {
     public Typeface getJostFont(){
         return Typeface.createFromAsset(context.getAssets(),"fonts/Jost.ttf");
     }
+
+    public Typeface getUbuntuFont(){
+        return Typeface.createFromAsset(context.getAssets(),"fonts/Ubuntu-Regular.ttf");
+    }
 }
