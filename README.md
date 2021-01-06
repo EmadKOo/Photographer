@@ -1,7 +1,7 @@
 # [Photography]()
 
  ## Photographer is a Strong Android Application that has a large capability to have multiple users as its backend depends on [Google Firebase](https://firebase.google.com/doc)
-  ## in photographer it has 3 users 
+  ##  Photographer  has 3 users 
   ###### 1) Normal User >> like any user to browse images and download it.
   ###### 2) Photographer User >> only this user can add images to any category he wants to share them with other people.
   ###### 3) admin user >> Dashboard for this app (delete images, grant permissions to users, add category and more..)
